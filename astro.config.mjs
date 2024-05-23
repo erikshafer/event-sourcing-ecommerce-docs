@@ -3,11 +3,14 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://event-sourcing-ecommerce.github.io',
+	base: '/docs',
+	trailingSlash: 'never',
 	integrations: [
 		starlight({
 			title: 'Event Sourcery',
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/erikshafer/event-sourcing-ecommerce',
 			},
 			sidebar: [
 				{
